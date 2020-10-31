@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+  } 
+  header {
+    margin: 0;
+    padding: 5px 5px 5px 20px;
+    background-color: #373F51;
+    color: #A9BCD0;
+    grid-area: header;
+    border-bottom: 5px solid #DAA49A;
+  }
+  .grid-container {
+    display: grid;
+    height: 80vh;
+    
+    align-content: space-around;
+    grid-template-columns: auto auto;
+  }
+  .boxA {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #D8DBE2;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 60vh;
+  }
+  .boxB {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #D8DBE2;
+    padding: 20px;
+    text-align: center;
+    width: 60vh;
+  }
+  .boxC {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #D8DBE2;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 60vh;
+  }
+  .boxD {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #D8DBE2;
+    padding: 20px;
+    text-align: center;
+    width: 60vh;
+  }  
+  button:hover {
+    background-color: #A9BCD0;
+  }
+  input:focus {
+    background-color: #D8DBE2;
+  }
+  #number1, #number2{
+    width: 60px;
+  }
+  button {
+    margin: 5px;
+  }
