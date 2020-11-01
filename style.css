@@ -78,11 +78,9 @@ body {
   @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
      }
   
     .boxA, .boxB, .boxC, .boxD, .boxE {
-      grid-column: auto;
-      grid-row: auto;
+      grid-column: 1fr;
     }
   }
