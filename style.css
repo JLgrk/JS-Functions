@@ -88,6 +88,7 @@ body {
     }
     .boxA, .boxB, .boxC, .boxD, .boxE {
         margin-left: 20px;
+        margin-right: 20px;
     }        
     
     }
