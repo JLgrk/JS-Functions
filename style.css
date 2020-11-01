@@ -75,8 +75,14 @@ body {
   button {
     margin: 5px;
   }
-  @media only screen and (max-width: 768px) {
-    .history {
-       display: block;
+  @media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+     }
+  
+    .boxA, .boxB, .boxC, .boxD, .boxE {
+      grid-column: auto;
+      grid-row: auto;
     }
-}
+  }
