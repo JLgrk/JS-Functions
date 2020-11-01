@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 0 100px 0;
     font-family: 'Roboto Slab', serif;
   } 
   header {
@@ -12,10 +12,13 @@ body {
   }
   .grid-container {
     display: grid;
-    height: 80vh;
-    
-    align-content: space-around;
-    grid-template-columns: auto auto;
+    width: 80vw;
+    grid-gap: 30px;
+    grid-template-areas: 
+        "header header"
+        "lefttop righttop"
+        "leftmiddle rightmiddle"
+        "leftbottom rightbottom";
   }
   .boxA {
     border: 1px solid black;
@@ -24,6 +27,7 @@ body {
     margin-left: 50px;
     text-align: center;
     width: 60vh;
+    grid-area: lefttop;
   }
   .boxB {
     border: 1px solid black;
@@ -31,6 +35,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 60vh;
+    grid-area: righttop;
   }
   .boxC {
     border: 1px solid black;
@@ -39,6 +44,7 @@ body {
     margin-left: 50px;
     text-align: center;
     width: 60vh;
+    grid-area: leftmiddle;
   }
   .boxD {
     border: 1px solid black;
@@ -46,7 +52,17 @@ body {
     padding: 20px;
     text-align: center;
     width: 60vh;
+    grid-area: rightmiddle;
   }  
+  .boxE {
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #D8DBE2;
+    padding: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 60vh;
+    grid-area: leftbottom;
+  }
   button:hover {
     background-color: #A9BCD0;
   }
