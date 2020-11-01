@@ -75,3 +75,8 @@ body {
   button {
     margin: 5px;
   }
+  @media only screen and (max-width: 768px) {
+    .history {
+       display: block;
+    }
+}
