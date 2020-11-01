@@ -75,12 +75,3 @@ body {
   button {
     margin: 5px;
   }
-  @media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-     }
-  
-    .boxA, .boxB, .boxC, .boxD, .boxE {
-      grid-column: 1fr;
-    }
-  }
